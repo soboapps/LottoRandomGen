@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText3_1"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/editText3_2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText3_2"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText3_3"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/editText3_4"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Pick 3 Numbers"
+            android:id="@+id/buttonPick3"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout4">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText4_1"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText4_2"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/editText5_1"
+            android:layout_toEndOf="@+id/editText5_1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText4_3"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText4_4"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/editText5_5" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Pick 4 Numbers"
+            android:id="@+id/buttonPick4"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/editText4_1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout5">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText5_1"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText5_2"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/editText5_1"
+            android:layout_toEndOf="@+id/editText5_1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText5_3"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText5_4"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/editText5_5" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText5_5"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/editText5_3"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Pick 5 Numbers"
+            android:id="@+id/buttonPick5"
+            android:layout_below="@+id/editText5_3"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
