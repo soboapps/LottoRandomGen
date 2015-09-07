@@ -52,7 +52,7 @@ public class GenerateRandomPickFive extends Activity {
     //@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pickthree);
+        setContentView(R.layout.number_combos);
 
         intentFi = getIntent();
 

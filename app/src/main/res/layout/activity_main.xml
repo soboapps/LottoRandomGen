@@ -2,7 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/stText"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/spacerView"
+        android:layout_gravity="center_horizontal" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -18,7 +35,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText3_1"
             android:layout_weight="1"
@@ -28,7 +47,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText3_2"
             android:layout_weight="1"
@@ -38,7 +59,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText3_3"
             android:layout_weight="1"
@@ -49,7 +72,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generate Pick 3 Numbers"
+            android:text="@string/stBtn3"
             android:id="@+id/buttonPick3"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
@@ -69,7 +92,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText4_1"
             android:layout_weight="1"
@@ -79,7 +104,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText4_2"
             android:layout_weight="1"
@@ -89,7 +116,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText4_3"
             android:layout_weight="1"
@@ -99,7 +128,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText4_4"
             android:layout_weight="1"
@@ -111,7 +142,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generate Pick 4 Numbers"
+            android:text="@string/stBtn4"
             android:id="@+id/buttonPick4"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/editText4_1" />
@@ -131,7 +162,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText5_1"
             android:layout_weight="1"
@@ -141,7 +174,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText5_2"
             android:layout_weight="1"
@@ -151,7 +186,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText5_3"
             android:layout_weight="1"
@@ -161,16 +198,21 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText5_4"
             android:layout_weight="1"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@+id/editText5_5" />
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="number"
+            android:maxLength="1"
             android:ems="1"
             android:id="@+id/editText5_5"
             android:layout_weight="1"
@@ -181,12 +223,11 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generate Pick 5 Numbers"
+            android:text="@string/stBtn5"
             android:id="@+id/buttonPick5"
             android:layout_below="@+id/editText5_3"
             android:layout_centerHorizontal="true" />
 
     </LinearLayout>
-
 
 </LinearLayout>

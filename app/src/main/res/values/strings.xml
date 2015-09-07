@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">LottoRandomGen</string>
+    <string name="app_name">Combo Gen</string>
     <string name="action_settings">Settings</string>
+    <string name="stText">Enter the Numbers for Pick 3, Pick 4 or Pick5</string>
+    <string name="stBtn3">Show Pick 3 Combos</string>
+    <string name="stBtn4">Show Pick 4 Combos</string>
+    <string name="stBtn5">Show Pick 5 Combos</string>
 
 </resources>
