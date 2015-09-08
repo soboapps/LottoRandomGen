@@ -1,4 +1,9 @@
+/*
+* Code to find all combinations of numbers with repeats
+*/
+
 package javaapplication1;
+
 
 import java.util.Arrays;
 import java.util.Collections;
