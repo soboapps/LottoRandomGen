@@ -1,77 +1,31 @@
-package com.soboapps.lottorandomgen;
+package javaapplication1;
 
-import android.app.Activity;
-
-import android.content.Intent;
-import android.os.Bundle;
-
-import android.view.ContextMenu;
-import android.view.MenuItem;
-import android.view.View;
-
-import android.widget.AdapterView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
+public class JavaApplication1 {
 
-public class GenerateRandomPickThree extends Activity {
-    
-    public static String[] options = { "5", "8", "2" };
-    public static String[] genNumbers = new String[options.length];
-
-    public ListAdapter simpleAdpt;
-    public List<Map<String, String>> numberList = new ArrayList<Map<String,String>>();
-
-     private void sequence(int level, String[] holder) {
-        if (level >= options.length) {
-            // combination complete
-            //System.out.println(Arrays.toString(holder));
-            numberList.add(createNumbers("numbers", Arrays.toString(holder)));
-            return;
-       }
-
-        String val = options[level];
-        String[] inrHolder = null;
-        for (int c = 0; c < holder.length; c++) {
-            inrHolder = holder.clone();
-            if (inrHolder[c] == null) {
-                inrHolder[c] = val;
-                sequence(level + 1, inrHolder.clone());
+    static void permute(int level, String permuted,
+                    boolean used[], String original) {
+        int length = original.length();
+        if (level == length) {
+            System.out.println(permuted);
+        } else {
+            for (int i = 0; i < length; i++) {
+                if (!used[i]) {
+                    used[i] = false;
+                    permute(level + 1, permuted + original.charAt(i),
+                       used, original);
+                    used[i] = false;
+                }
             }
         }
-        return;
     }
 
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.pickthree);
-
-        sequence(0, genNumbers.clone());
-
-        ListView lv = (ListView) findViewById(R.id.listView);
-        simpleAdpt = new SimpleAdapter(this, numberList, android.R.layout.simple_list_item_1, new String[] {"numbers"}, new int[] {android.R.id.text1});
-
-        lv.setAdapter(simpleAdpt);
-
+    public static void main(String[] args) {
+        String s = "69035";
+        boolean used[] = {false, false, false, false, false};
+        permute(0, "", used, s);
     }
-
-
-    public HashMap<String, String> createNumbers(String key, String name) {
-        HashMap<String, String> numbers = new HashMap<String, String>();
-        numbers.put(key, name);
-
-        return numbers;
-    }
-
 }
